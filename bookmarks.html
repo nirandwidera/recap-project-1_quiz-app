@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bookmarks</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+<!-- Accessibility? -->
+  <body class="flex">
+    <header>
+      <h1>Quiz APP</h1>
+    </header>
+   
+    <section class="cards">
+      <article class="question-box">
+        <span class="bookmarks"> 
+          <i
+            class="fa-solid fa-bookmark"
+            data-js="bookmark"
+          ></i>
+        </span>
+        <h2>Frage 1: What is the capital of the country Norway?</h2>
+        <button class="answer-button">Show Answer</button>
+        <p class="hide"><b>Answer:</b> Oslo</p>
+      </article>
+
+      <!-- later we need those questions and answers for JS createElement in forms
+
+      <article class="question-box">
+        <span class="bookmarks">
+          <i
+            class="fa-solid fa-bookmark"
+            class="bookmarks"
+            data-js="bookmark"
+          ></i>
+        </span>
+        <h3>Frage 2: In which year did the First World War end?</h3>
+        <button class="answer-button">Show Answer</button>
+        <p class="hide"><b>Answer:</b> 1918</p>
+      </article>
+
+      <article class="question-box">
+        <span class="bookmarks">
+          <i
+            class="fa-solid fa-bookmark"
+            class="bookmarks"
+            data-js="bookmark"
+          ></i>
+        </span>
+        <h4>
+          Frage 3: Which chemical element has the symbol "H" in the periodic
+          table?
+        </h4>
+        <button class="answer-button">Show Answer</button>
+        <p class="hide"><b>Answer:</b> hydrogen</p>
+      </article>
+
+      <article class="question-box">
+        <span class="bookmarks">
+          <i
+            class="fa-solid fa-bookmark"
+            class="bookmarks"
+            data-js="bookmark"
+          ></i>
+        </span>
+        <h5>
+          Frage 4: Which film won the Oscar for Best Picture in the year 1994?
+        </h5>
+        <button class="answer-button">Show Answer</button>
+        <p class="hide"><b>Answer:</b> Schindler's List</p>
+      </article>
+    </section>
+-->
+    <nav class="fixed-bottom-navbar">
+      <ul>
+        <li>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="highlight fa-solid fa-bookmark"></i></a>
+        </li>
+        <li>
+          <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <a href="form.html"><i class="fa-solid fa-question"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
