@@ -1,0 +1,106 @@
+/* dont forget about CSS Structure!*/
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+h1 {
+  color: white;
+  font-size: 30px;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-size: 20px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards {
+  padding-top: 100px;
+}
+.question-box {
+  margin: 15px;
+  padding: 15px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.answer-button {
+  width: fit-content;
+}
+.question {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.fixed-bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+ul li a {
+  color: green;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: greenyellow;
+}
+/*Hiermit wird die Antwort "unsichtbar"*/
+.hide {
+  display: none;
+}
+.highlight {
+  color: greenyellow;
+}
+.bookmarks {
+  font-size: 1.4rem;
+  color: green;
+}
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  top: 100px;
+  right: 350px;
+}
+.hidden {
+  display: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+textarea {
+  width: 250px;
+  height: 250px;
+}
+.darkgrey {
+  background-color: darkgrey;
+}
+#toggle-mode {
+  margin-top: 90px;
+}
