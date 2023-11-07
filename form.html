@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homepage</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="flex">
+    <header>
+      <h1>Quiz APP</h1>
+    </header>
+
+    <form class="cards">
+      <label for="question">Your question:</label>
+      <textarea
+        id="question"
+        name="question"
+        maxlength="150"
+        data-js="question-input"
+      ></textarea>
+      <span data-js="remainingCharacters1"> </span> characters left
+
+      <label for="answer">Your answer:</label>
+      <textarea
+        id="answer"
+        name="answer"
+        maxlength="150"
+        data-js="answer-input"
+      ></textarea>
+      <span data-js="remainingCharacters2"> </span> characters left
+
+      <label for="tag">Tag:</label>
+      <input type="text" id="tag" name="tag" />
+
+      <input type="submit" value="Submit" data-js="submit-button" />
+    </form>
+
+    <nav class="fixed-bottom-navbar">
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
+        </li>
+        <li>
+          <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="highlight fa-solid fa-question"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <script src="form.js" defer></script>
+  </body>
+</html>
