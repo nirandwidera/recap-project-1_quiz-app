@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile page</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!-- Accessibility? -->
+  <body class="flex">
+    <header>
+      <h1>Quiz APP</h1>
+    </header>
+
+    <!-- Dark Mode -->
+    <button id="toggle-mode" data-js="toggle">Dark mode off</button>
+
+    <img
+      class="profile-img"
+      src="https://w0.peakpx.com/wallpaper/561/538/HD-wallpaper-lockscreen-4-in-2022-rick-astley-rick-rolled-singer.jpg"
+      alt="profile picture of Rick Roll"
+    />
+    <h2>Rick Roll</h2>
+
+    <h3>About me</h3>
+    <p class="question-box">
+      "Hey there! <br /><br />
+      I'm a fan of internet culture and one of my favorite internet phenomena is
+      Rickrolling.<br />
+      If you're not familiar with it, Rickrolling is a lighthearted online prank
+      that involves redirecting someone to the music video for Rick Astley's
+      'Never Gonna Give You Up' when they expect something entirely different.
+      <br />
+      <br />
+      This phenomenon started around 2007 and quickly became a viral sensation.
+      It's all in good fun and a humorous way to playfully trick someone online.
+      So, if you ever see a mysterious link promising exciting content,
+      beware—you might just get 'Rickrolled' with some catchy '80s music and a
+      friendly reminder that 'Never Gonna Give You Up'!"
+    </p>
+
+    <!--aria-hidden="true" ist für screenreader, damit erkannt wird, dass die Icons als Deko dienen-->
+    <!--aria-label dient zur Beschreibung der Anzahl der Lesezeichen sowie der Fragen (ins.)-->
+    <div class="total-questions">
+      <i class="fas fa-star" aria-hidden="true"></i>
+      <span aria-label="numbers of created questions">5</span>
+    </div>
+
+    <div class="counter-bookmarks">
+      <i class="fas fa-bookmark" aria-hidden="true"></i>
+      <span aria-label="numbers of bookmarks">10</span>
+    </div>
+
+    <h4>Settings</h4>
+
+    <nav class="fixed-bottom-navbar">
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="highlight fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <a href="form.html"><i class="fa-solid fa-question"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <script src="profile.js" type="module"></script>
+  </body>
+</html>
